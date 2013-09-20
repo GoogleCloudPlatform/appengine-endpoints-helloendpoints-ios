@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F094C0117EB74A200EB982F /* GTLCommon_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F094BFF17EB74A200EB982F /* GTLCommon_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3F094C0217EB74A200EB982F /* GTLNetworking_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F094C0017EB74A200EB982F /* GTLNetworking_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3F094C0417EB75AA00EB982F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F094C0317EB75AA00EB982F /* SystemConfiguration.framework */; };
+		3F094C0617EB75C900EB982F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F094C0517EB75C900EB982F /* Security.framework */; };
+		3F094C0817EB75FE00EB982F /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F094C0717EB75FE00EB982F /* GTMOAuth2ViewTouch.xib */; };
 		3FAD82C917DE8A750080ADF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAD82C817DE8A750080ADF5 /* UIKit.framework */; };
 		3FAD82CB17DE8A750080ADF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAD82CA17DE8A750080ADF5 /* Foundation.framework */; };
 		3FAD82CD17DE8A750080ADF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAD82CC17DE8A750080ADF5 /* CoreGraphics.framework */; };
@@ -23,6 +28,11 @@
 		3FAD82F217DE8A750080ADF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAD82CA17DE8A750080ADF5 /* Foundation.framework */; };
 		3FAD82FA17DE8A750080ADF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD82F817DE8A750080ADF5 /* InfoPlist.strings */; };
 		3FAD82FD17DE8A750080ADF5 /* Hello_EndpointsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD82FC17DE8A750080ADF5 /* Hello_EndpointsTests.m */; };
+		3FD8E4AD17EB9A9000A208C3 /* GTLHelloworld_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8E4A417EB9A9000A208C3 /* GTLHelloworld_Sources.m */; };
+		3FD8E4BB17EBAA8E00A208C3 /* GTLHelloworldGreeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8E4B417EBAA8E00A208C3 /* GTLHelloworldGreeting.m */; };
+		3FD8E4BC17EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8E4B617EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.m */; };
+		3FD8E4BD17EBAA8E00A208C3 /* GTLQueryHelloworld.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8E4B817EBAA8E00A208C3 /* GTLQueryHelloworld.m */; };
+		3FD8E4BE17EBAA8E00A208C3 /* GTLServiceHelloworld.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8E4BA17EBAA8E00A208C3 /* GTLServiceHelloworld.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F094BFF17EB74A200EB982F /* GTLCommon_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLCommon_Sources.m; path = "google-api-objectivec-client-read-only/Source/GTLCommon_Sources.m"; sourceTree = "<group>"; };
+		3F094C0017EB74A200EB982F /* GTLNetworking_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLNetworking_Sources.m; path = "google-api-objectivec-client-read-only/Source/GTLNetworking_Sources.m"; sourceTree = "<group>"; };
+		3F094C0317EB75AA00EB982F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3F094C0517EB75C900EB982F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3F094C0717EB75FE00EB982F /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = "google-api-objectivec-client-read-only/Source/OAuth2/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = "<group>"; };
 		3FAD82C517DE8A750080ADF5 /* Hello Endpoints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello Endpoints.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAD82C817DE8A750080ADF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3FAD82CA17DE8A750080ADF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +73,16 @@
 		3FAD82F917DE8A750080ADF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FAD82FB17DE8A750080ADF5 /* Hello_EndpointsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hello_EndpointsTests.h; sourceTree = "<group>"; };
 		3FAD82FC17DE8A750080ADF5 /* Hello_EndpointsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hello_EndpointsTests.m; sourceTree = "<group>"; };
+		3FD8E4A417EB9A9000A208C3 /* GTLHelloworld_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLHelloworld_Sources.m; sourceTree = "<group>"; };
+		3FD8E4B217EBAA8D00A208C3 /* GTLHelloworld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLHelloworld.h; sourceTree = "<group>"; };
+		3FD8E4B317EBAA8D00A208C3 /* GTLHelloworldGreeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLHelloworldGreeting.h; sourceTree = "<group>"; };
+		3FD8E4B417EBAA8E00A208C3 /* GTLHelloworldGreeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLHelloworldGreeting.m; sourceTree = "<group>"; };
+		3FD8E4B517EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLHelloworldGreetingCollection.h; sourceTree = "<group>"; };
+		3FD8E4B617EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLHelloworldGreetingCollection.m; sourceTree = "<group>"; };
+		3FD8E4B717EBAA8E00A208C3 /* GTLQueryHelloworld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLQueryHelloworld.h; sourceTree = "<group>"; };
+		3FD8E4B817EBAA8E00A208C3 /* GTLQueryHelloworld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQueryHelloworld.m; sourceTree = "<group>"; };
+		3FD8E4B917EBAA8E00A208C3 /* GTLServiceHelloworld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLServiceHelloworld.h; sourceTree = "<group>"; };
+		3FD8E4BA17EBAA8E00A208C3 /* GTLServiceHelloworld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLServiceHelloworld.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F094C0617EB75C900EB982F /* Security.framework in Frameworks */,
+				3F094C0417EB75AA00EB982F /* SystemConfiguration.framework in Frameworks */,
 				3FAD82C917DE8A750080ADF5 /* UIKit.framework in Frameworks */,
 				3FAD82CB17DE8A750080ADF5 /* Foundation.framework in Frameworks */,
 				3FAD82CD17DE8A750080ADF5 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +114,11 @@
 		3FAD82BC17DE8A750080ADF5 = {
 			isa = PBXGroup;
 			children = (
+				3F094C0717EB75FE00EB982F /* GTMOAuth2ViewTouch.xib */,
+				3F094C0517EB75C900EB982F /* Security.framework */,
+				3F094C0317EB75AA00EB982F /* SystemConfiguration.framework */,
+				3F094BFF17EB74A200EB982F /* GTLCommon_Sources.m */,
+				3F094C0017EB74A200EB982F /* GTLNetworking_Sources.m */,
 				3FAD82CE17DE8A750080ADF5 /* Hello Endpoints */,
 				3FAD82F517DE8A750080ADF5 /* Hello EndpointsTests */,
 				3FAD82C717DE8A750080ADF5 /* Frameworks */,
@@ -117,6 +149,7 @@
 		3FAD82CE17DE8A750080ADF5 /* Hello Endpoints */ = {
 			isa = PBXGroup;
 			children = (
+				3FD8E4A217EB9A9000A208C3 /* API */,
 				3FAD82D717DE8A750080ADF5 /* AppDelegate.h */,
 				3FAD82D817DE8A750080ADF5 /* AppDelegate.m */,
 				3FAD82E017DE8A750080ADF5 /* MainStoryboard_iPhone.storyboard */,
@@ -158,6 +191,24 @@
 				3FAD82F817DE8A750080ADF5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FD8E4A217EB9A9000A208C3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3FD8E4B217EBAA8D00A208C3 /* GTLHelloworld.h */,
+				3FD8E4B317EBAA8D00A208C3 /* GTLHelloworldGreeting.h */,
+				3FD8E4B417EBAA8E00A208C3 /* GTLHelloworldGreeting.m */,
+				3FD8E4B517EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.h */,
+				3FD8E4B617EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.m */,
+				3FD8E4B717EBAA8E00A208C3 /* GTLQueryHelloworld.h */,
+				3FD8E4B817EBAA8E00A208C3 /* GTLQueryHelloworld.m */,
+				3FD8E4B917EBAA8E00A208C3 /* GTLServiceHelloworld.h */,
+				3FD8E4BA17EBAA8E00A208C3 /* GTLServiceHelloworld.m */,
+				3FD8E4A417EB9A9000A208C3 /* GTLHelloworld_Sources.m */,
+			);
+			name = API;
+			path = ../API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +287,7 @@
 				3FAD82DD17DE8A750080ADF5 /* Default@2x.png in Resources */,
 				3FAD82DF17DE8A750080ADF5 /* Default-568h@2x.png in Resources */,
 				3FAD82E217DE8A750080ADF5 /* MainStoryboard_iPhone.storyboard in Resources */,
+				3F094C0817EB75FE00EB982F /* GTMOAuth2ViewTouch.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +325,9 @@
 				3FAD82D517DE8A750080ADF5 /* main.m in Sources */,
 				3FAD82D917DE8A750080ADF5 /* AppDelegate.m in Sources */,
 				3FAD82E817DE8A750080ADF5 /* ViewController.m in Sources */,
+				3F094C0117EB74A200EB982F /* GTLCommon_Sources.m in Sources */,
+				3F094C0217EB74A200EB982F /* GTLNetworking_Sources.m in Sources */,
+				3FD8E4AD17EB9A9000A208C3 /* GTLHelloworld_Sources.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +336,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FAD82FD17DE8A750080ADF5 /* Hello_EndpointsTests.m in Sources */,
+				3FD8E4BB17EBAA8E00A208C3 /* GTLHelloworldGreeting.m in Sources */,
+				3FD8E4BC17EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.m in Sources */,
+				3FD8E4BD17EBAA8E00A208C3 /* GTLQueryHelloworld.m in Sources */,
+				3FD8E4BE17EBAA8E00A208C3 /* GTLServiceHelloworld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +406,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./google-api-objectivec-client-read-only/Source/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -372,6 +432,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./google-api-objectivec-client-read-only/Source/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -385,8 +446,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hello Endpoints/Hello Endpoints-Prefix.pch";
+				HEADER_SEARCH_PATHS = "./google-api-objectivec-client-read-only/Source/**";
 				INFOPLIST_FILE = "Hello Endpoints/Hello Endpoints-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -397,8 +460,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hello Endpoints/Hello Endpoints-Prefix.pch";
+				HEADER_SEARCH_PATHS = "./google-api-objectivec-client-read-only/Source/**";
 				INFOPLIST_FILE = "Hello Endpoints/Hello Endpoints-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +522,7 @@
 				3FAD830217DE8A750080ADF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FAD830317DE8A750080ADF5 /* Build configuration list for PBXNativeTarget "Hello EndpointsTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +531,7 @@
 				3FAD830517DE8A750080ADF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,6 @@
         <!--View Controller - Hello Endpoints-->
         <scene sceneID="5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3" customClass="UIScrollView">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
@@ -79,6 +78,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="listGreetings:" destination="2" eventType="touchUpInside" id="mJD-gA-xyU"/>
                                     <segue destination="cy5-Fy-Lek" kind="push" id="1uM-th-HEF"/>
                                 </connections>
                             </button>
@@ -143,7 +143,13 @@
                     <navigationItem key="navigationItem" title="Hello Endpoints" id="3cF-Ui-0tr">
                         <barButtonItem key="backBarButtonItem" title="Back" id="DoR-8Z-Dr0"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="getGreetingButton" destination="goQ-Ez-Bhl" id="Evv-Ij-xue"/>
+                        <outlet property="listGreetingsButton" destination="jS7-kx-zzE" id="GbU-Ri-2JH"/>
+                        <outlet property="mulitplyGreetingButton" destination="2eI-Er-PVP" id="yFU-HK-Bdv"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="788" y="506"/>
         </scene>
@@ -198,6 +204,20 @@
             <point key="canvasLocation" x="329" y="506"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="listGreetings:"/>
+                <relationship kind="outlet" name="getGreetingButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="listGreetingsButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mulitplyGreetingButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

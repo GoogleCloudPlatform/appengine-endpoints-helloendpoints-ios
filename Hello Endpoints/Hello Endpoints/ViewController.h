@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GTMOAuth2ViewControllerTouch.h"
+#import "GTMHTTPFetcherLogging.h"
+#import "GTLHelloworld.h"
 
 @interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UIButton *getGreetingButton;
+@property (weak, nonatomic) IBOutlet UIButton *listGreetingsButton;
+@property (weak, nonatomic) IBOutlet UIButton *mulitplyGreetingButton;
+
+// Remote API handling.
+- (GTLServiceHelloworld *)helloworldService;
 
 @end
