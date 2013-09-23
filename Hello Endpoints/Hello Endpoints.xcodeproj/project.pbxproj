@@ -12,6 +12,7 @@
 		3F094C0417EB75AA00EB982F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F094C0317EB75AA00EB982F /* SystemConfiguration.framework */; };
 		3F094C0617EB75C900EB982F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F094C0517EB75C900EB982F /* Security.framework */; };
 		3F094C0817EB75FE00EB982F /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F094C0717EB75FE00EB982F /* GTMOAuth2ViewTouch.xib */; };
+		3F58B7A917ECDA0700401BC1 /* GreetingsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F58B7A817ECDA0700401BC1 /* GreetingsListViewController.m */; };
 		3FAD82C917DE8A750080ADF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAD82C817DE8A750080ADF5 /* UIKit.framework */; };
 		3FAD82CB17DE8A750080ADF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAD82CA17DE8A750080ADF5 /* Foundation.framework */; };
 		3FAD82CD17DE8A750080ADF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAD82CC17DE8A750080ADF5 /* CoreGraphics.framework */; };
@@ -51,6 +52,8 @@
 		3F094C0317EB75AA00EB982F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3F094C0517EB75C900EB982F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		3F094C0717EB75FE00EB982F /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = "google-api-objectivec-client-read-only/Source/OAuth2/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = "<group>"; };
+		3F58B7A717ECDA0700401BC1 /* GreetingsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreetingsListViewController.h; sourceTree = "<group>"; };
+		3F58B7A817ECDA0700401BC1 /* GreetingsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreetingsListViewController.m; sourceTree = "<group>"; };
 		3FAD82C517DE8A750080ADF5 /* Hello Endpoints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello Endpoints.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAD82C817DE8A750080ADF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3FAD82CA17DE8A750080ADF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -154,6 +157,8 @@
 				3FAD82D817DE8A750080ADF5 /* AppDelegate.m */,
 				3FAD82E017DE8A750080ADF5 /* MainStoryboard_iPhone.storyboard */,
 				3FAD82E617DE8A750080ADF5 /* ViewController.h */,
+				3F58B7A717ECDA0700401BC1 /* GreetingsListViewController.h */,
+				3F58B7A817ECDA0700401BC1 /* GreetingsListViewController.m */,
 				3FAD82E717DE8A750080ADF5 /* ViewController.m */,
 				3FAD82CF17DE8A750080ADF5 /* Supporting Files */,
 			);
@@ -328,6 +333,7 @@
 				3F094C0117EB74A200EB982F /* GTLCommon_Sources.m in Sources */,
 				3F094C0217EB74A200EB982F /* GTLNetworking_Sources.m in Sources */,
 				3FD8E4AD17EB9A9000A208C3 /* GTLHelloworld_Sources.m in Sources */,
+				3F58B7A917ECDA0700401BC1 /* GreetingsListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

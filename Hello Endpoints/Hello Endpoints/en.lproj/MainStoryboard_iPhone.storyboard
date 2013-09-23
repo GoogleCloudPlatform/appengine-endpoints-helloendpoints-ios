@@ -37,23 +37,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfx-Dw-5Au">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Greeting ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfx-Dw-5Au">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="162" id="W41-uE-DgN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AeI-A7-RBv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Greeting to send" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AeI-A7-RBv">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="162" id="cYr-n1-aF0"/>
+                                    <constraint firstAttribute="width" constant="257" id="Wwe-Lr-UEI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" keyboardType="alphabet" returnKeyType="done"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghO-wJ-9HX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Greeting count to send" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghO-wJ-9HX">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="AT3-l0-hJN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goQ-Ez-Bhl">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -65,7 +68,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cy5-Fy-Lek" kind="push" id="gJ3-Wd-3vY"/>
+                                    <action selector="getGreeting:" destination="2" eventType="touchUpInside" id="dcX-ZG-u1z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jS7-kx-zzE">
@@ -79,7 +82,6 @@
                                 </state>
                                 <connections>
                                     <action selector="listGreetings:" destination="2" eventType="touchUpInside" id="mJD-gA-xyU"/>
-                                    <segue destination="cy5-Fy-Lek" kind="push" id="1uM-th-HEF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eI-Er-PVP">
@@ -92,7 +94,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cy5-Fy-Lek" kind="push" id="i0X-LQ-HNl"/>
+                                    <action selector="multiplyGreetings:" destination="2" eventType="touchUpInside" id="iK6-Fv-BwX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tym-ZK-o7G">
@@ -105,7 +107,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cy5-Fy-Lek" kind="push" id="4YF-T2-G4k"/>
+                                    <action selector="getAuthenticatedGreeting:" destination="2" eventType="touchUpInside" id="Oqh-3E-0Xb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -129,7 +131,6 @@
                             <constraint firstItem="ghO-wJ-9HX" firstAttribute="trailing" secondItem="2eI-Er-PVP" secondAttribute="trailing" type="default" id="VUt-ni-21F"/>
                             <constraint firstItem="AeI-A7-RBv" firstAttribute="top" secondItem="k08-Pn-rSc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="a8f-uR-L61"/>
                             <constraint firstItem="ghO-wJ-9HX" firstAttribute="top" secondItem="AeI-A7-RBv" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="bOV-a9-DO4"/>
-                            <constraint firstItem="AeI-A7-RBv" firstAttribute="leading" secondItem="ghO-wJ-9HX" secondAttribute="leading" type="default" id="bhl-Ix-1FI"/>
                             <constraint firstItem="UZC-3v-yZh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="38" id="dpa-eg-ofS"/>
                             <constraint firstItem="2eI-Er-PVP" firstAttribute="trailing" secondItem="tym-ZK-o7G" secondAttribute="trailing" type="default" id="eIg-50-5qC"/>
                             <constraint firstItem="jS7-kx-zzE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="145" id="hDW-AK-YFx"/>
@@ -142,34 +143,60 @@
                     </view>
                     <navigationItem key="navigationItem" title="Hello Endpoints" id="3cF-Ui-0tr">
                         <barButtonItem key="backBarButtonItem" title="Back" id="DoR-8Z-Dr0"/>
+                        <barButtonItem key="rightBarButtonItem" title="Sign In" id="L6c-kJ-ON1">
+                            <connections>
+                                <action selector="signIn:" destination="2" id="YBb-zu-57C"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="getGreetingButton" destination="goQ-Ez-Bhl" id="Evv-Ij-xue"/>
+                        <outlet property="getGreetingIDField" destination="bfx-Dw-5Au" id="7fU-c3-zaM"/>
                         <outlet property="listGreetingsButton" destination="jS7-kx-zzE" id="GbU-Ri-2JH"/>
                         <outlet property="mulitplyGreetingButton" destination="2eI-Er-PVP" id="yFU-HK-Bdv"/>
+                        <outlet property="multiplyGreetingCountField" destination="ghO-wJ-9HX" id="EIa-18-Y5A"/>
+                        <outlet property="multiplyGreetingMessageField" destination="AeI-A7-RBv" id="Wh0-UA-ubg"/>
+                        <outlet property="signInButton" destination="L6c-kJ-ON1" id="gTW-fb-c5l"/>
+                        <outlet property="signInLabel" destination="Iws-3D-kOY" id="xPj-tD-Td4"/>
+                        <segue destination="cy5-Fy-Lek" kind="push" identifier="DisplayGreetings" id="aUQ-0l-W83"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="788" y="506"/>
         </scene>
-        <!--Table View Controller - Greetings List-->
+        <!--Greetings List View Controller - Greetings List-->
         <scene sceneID="axK-nN-Kzl">
             <objects>
-                <tableViewController id="cy5-Fy-Lek" sceneMemberID="viewController">
+                <tableViewController id="cy5-Fy-Lek" customClass="GreetingsListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MMl-r7-wIG">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Brr-w7-Q8S">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GreetingTableViewCell" id="Brr-w7-Q8S">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" text="Greeting" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="292" translatesAutoresizingMaskIntoConstraints="NO" id="l9F-I7-7GL">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="292" id="CvA-WJ-QUA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="l9F-I7-7GL" firstAttribute="leading" secondItem="Brr-w7-Q8S" secondAttribute="leading" constant="20" type="default" id="Acp-MY-55M"/>
+                                    <constraint firstItem="l9F-I7-7GL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Brr-w7-Q8S" secondAttribute="top" constant="11" type="user" id="BVu-ww-jEl"/>
+                                    <constraint firstItem="l9F-I7-7GL" firstAttribute="top" secondItem="Brr-w7-Q8S" secondAttribute="top" constant="11" id="Ex9-al-11A"/>
+                                </constraints>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -204,26 +231,9 @@
             <point key="canvasLocation" x="329" y="506"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="listGreetings:"/>
-                <relationship kind="outlet" name="getGreetingButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="listGreetingsButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="mulitplyGreetingButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="i0X-LQ-HNl"/>
-    </inferredMetricsTieBreakers>
 </document>
