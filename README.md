@@ -46,7 +46,7 @@ Hit the play button to build the project.
 
 2. Modify `kMyClientId` and `kMyClientSecret` in `ViewController.m` to include
    the web client ID and client secret you registered in the [APIs Console][6].
-3. Modify `GTLServiceTictactoe.m` (line 44) to point to the location where you
+3. Modify `GTLServiceHelloworld.m` (line 44) to point to the location where you
    are hosting a Helloworld backend.
 4. Run the application.
 
