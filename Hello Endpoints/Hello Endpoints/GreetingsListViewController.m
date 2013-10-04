@@ -70,7 +70,7 @@
                                       reuseIdentifier:MyIdentifier];
     }
     NSInteger greetingIndex = [indexPath indexAtPosition:1];
-    GTLHelloworldGreeting *greeting = [greetingsToDisplay objectAtIndex:greetingIndex];
+    GTLHelloworldHelloGreeting *greeting = [greetingsToDisplay objectAtIndex:greetingIndex];
     UILabel *messageLabel = (UILabel *) [cell viewWithTag:1];
     [messageLabel setText:[greeting message]];
     return cell;

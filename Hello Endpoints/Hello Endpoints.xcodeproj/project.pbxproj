@@ -29,11 +29,13 @@
 		3FAD82F217DE8A750080ADF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAD82CA17DE8A750080ADF5 /* Foundation.framework */; };
 		3FAD82FA17DE8A750080ADF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD82F817DE8A750080ADF5 /* InfoPlist.strings */; };
 		3FAD82FD17DE8A750080ADF5 /* Hello_EndpointsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD82FC17DE8A750080ADF5 /* Hello_EndpointsTests.m */; };
-		3FD8E4AD17EB9A9000A208C3 /* GTLHelloworld_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8E4A417EB9A9000A208C3 /* GTLHelloworld_Sources.m */; };
-		3FD8E4BB17EBAA8E00A208C3 /* GTLHelloworldGreeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8E4B417EBAA8E00A208C3 /* GTLHelloworldGreeting.m */; };
-		3FD8E4BC17EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8E4B617EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.m */; };
 		3FD8E4BD17EBAA8E00A208C3 /* GTLQueryHelloworld.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8E4B817EBAA8E00A208C3 /* GTLQueryHelloworld.m */; };
 		3FD8E4BE17EBAA8E00A208C3 /* GTLServiceHelloworld.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8E4BA17EBAA8E00A208C3 /* GTLServiceHelloworld.m */; };
+		3FF26D0E17FF8BEF00F1D2D1 /* GTLHelloworldConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF26D0617FF8BC300F1D2D1 /* GTLHelloworldConstants.m */; };
+		3FF26D0F17FF8BEF00F1D2D1 /* GTLHelloworldHelloGreeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF26D0817FF8BC300F1D2D1 /* GTLHelloworldHelloGreeting.m */; };
+		3FF26D1017FF8BEF00F1D2D1 /* GTLHelloworldHelloGreetingCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF26D0A17FF8BC300F1D2D1 /* GTLHelloworldHelloGreetingCollection.m */; };
+		3FF26D1117FF8BEF00F1D2D1 /* GTLQueryHelloworld.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8E4B817EBAA8E00A208C3 /* GTLQueryHelloworld.m */; };
+		3FF26D1217FF8BEF00F1D2D1 /* GTLServiceHelloworld.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8E4BA17EBAA8E00A208C3 /* GTLServiceHelloworld.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,16 +78,17 @@
 		3FAD82F917DE8A750080ADF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FAD82FB17DE8A750080ADF5 /* Hello_EndpointsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hello_EndpointsTests.h; sourceTree = "<group>"; };
 		3FAD82FC17DE8A750080ADF5 /* Hello_EndpointsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hello_EndpointsTests.m; sourceTree = "<group>"; };
-		3FD8E4A417EB9A9000A208C3 /* GTLHelloworld_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLHelloworld_Sources.m; sourceTree = "<group>"; };
 		3FD8E4B217EBAA8D00A208C3 /* GTLHelloworld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLHelloworld.h; sourceTree = "<group>"; };
-		3FD8E4B317EBAA8D00A208C3 /* GTLHelloworldGreeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLHelloworldGreeting.h; sourceTree = "<group>"; };
-		3FD8E4B417EBAA8E00A208C3 /* GTLHelloworldGreeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLHelloworldGreeting.m; sourceTree = "<group>"; };
-		3FD8E4B517EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLHelloworldGreetingCollection.h; sourceTree = "<group>"; };
-		3FD8E4B617EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLHelloworldGreetingCollection.m; sourceTree = "<group>"; };
 		3FD8E4B717EBAA8E00A208C3 /* GTLQueryHelloworld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLQueryHelloworld.h; sourceTree = "<group>"; };
 		3FD8E4B817EBAA8E00A208C3 /* GTLQueryHelloworld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQueryHelloworld.m; sourceTree = "<group>"; };
 		3FD8E4B917EBAA8E00A208C3 /* GTLServiceHelloworld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLServiceHelloworld.h; sourceTree = "<group>"; };
 		3FD8E4BA17EBAA8E00A208C3 /* GTLServiceHelloworld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLServiceHelloworld.m; sourceTree = "<group>"; };
+		3FF26D0517FF8BC300F1D2D1 /* GTLHelloworldConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLHelloworldConstants.h; sourceTree = "<group>"; };
+		3FF26D0617FF8BC300F1D2D1 /* GTLHelloworldConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLHelloworldConstants.m; sourceTree = "<group>"; };
+		3FF26D0717FF8BC300F1D2D1 /* GTLHelloworldHelloGreeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLHelloworldHelloGreeting.h; sourceTree = "<group>"; };
+		3FF26D0817FF8BC300F1D2D1 /* GTLHelloworldHelloGreeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLHelloworldHelloGreeting.m; sourceTree = "<group>"; };
+		3FF26D0917FF8BC300F1D2D1 /* GTLHelloworldHelloGreetingCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLHelloworldHelloGreetingCollection.h; sourceTree = "<group>"; };
+		3FF26D0A17FF8BC300F1D2D1 /* GTLHelloworldHelloGreetingCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLHelloworldHelloGreetingCollection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,16 +204,17 @@
 		3FD8E4A217EB9A9000A208C3 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				3FF26D0517FF8BC300F1D2D1 /* GTLHelloworldConstants.h */,
+				3FF26D0617FF8BC300F1D2D1 /* GTLHelloworldConstants.m */,
+				3FF26D0717FF8BC300F1D2D1 /* GTLHelloworldHelloGreeting.h */,
+				3FF26D0817FF8BC300F1D2D1 /* GTLHelloworldHelloGreeting.m */,
+				3FF26D0917FF8BC300F1D2D1 /* GTLHelloworldHelloGreetingCollection.h */,
+				3FF26D0A17FF8BC300F1D2D1 /* GTLHelloworldHelloGreetingCollection.m */,
 				3FD8E4B217EBAA8D00A208C3 /* GTLHelloworld.h */,
-				3FD8E4B317EBAA8D00A208C3 /* GTLHelloworldGreeting.h */,
-				3FD8E4B417EBAA8E00A208C3 /* GTLHelloworldGreeting.m */,
-				3FD8E4B517EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.h */,
-				3FD8E4B617EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.m */,
 				3FD8E4B717EBAA8E00A208C3 /* GTLQueryHelloworld.h */,
 				3FD8E4B817EBAA8E00A208C3 /* GTLQueryHelloworld.m */,
 				3FD8E4B917EBAA8E00A208C3 /* GTLServiceHelloworld.h */,
 				3FD8E4BA17EBAA8E00A208C3 /* GTLServiceHelloworld.m */,
-				3FD8E4A417EB9A9000A208C3 /* GTLHelloworld_Sources.m */,
 			);
 			name = API;
 			path = ../API;
@@ -327,12 +331,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF26D0E17FF8BEF00F1D2D1 /* GTLHelloworldConstants.m in Sources */,
+				3FF26D0F17FF8BEF00F1D2D1 /* GTLHelloworldHelloGreeting.m in Sources */,
+				3FF26D1017FF8BEF00F1D2D1 /* GTLHelloworldHelloGreetingCollection.m in Sources */,
+				3FF26D1117FF8BEF00F1D2D1 /* GTLQueryHelloworld.m in Sources */,
+				3FF26D1217FF8BEF00F1D2D1 /* GTLServiceHelloworld.m in Sources */,
 				3FAD82D517DE8A750080ADF5 /* main.m in Sources */,
 				3FAD82D917DE8A750080ADF5 /* AppDelegate.m in Sources */,
 				3FAD82E817DE8A750080ADF5 /* ViewController.m in Sources */,
 				3F094C0117EB74A200EB982F /* GTLCommon_Sources.m in Sources */,
 				3F094C0217EB74A200EB982F /* GTLNetworking_Sources.m in Sources */,
-				3FD8E4AD17EB9A9000A208C3 /* GTLHelloworld_Sources.m in Sources */,
 				3F58B7A917ECDA0700401BC1 /* GreetingsListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,8 +350,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FAD82FD17DE8A750080ADF5 /* Hello_EndpointsTests.m in Sources */,
-				3FD8E4BB17EBAA8E00A208C3 /* GTLHelloworldGreeting.m in Sources */,
-				3FD8E4BC17EBAA8E00A208C3 /* GTLHelloworldGreetingCollection.m in Sources */,
 				3FD8E4BD17EBAA8E00A208C3 /* GTLQueryHelloworld.m in Sources */,
 				3FD8E4BE17EBAA8E00A208C3 /* GTLServiceHelloworld.m in Sources */,
 			);

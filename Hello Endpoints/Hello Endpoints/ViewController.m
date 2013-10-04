@@ -84,7 +84,7 @@ BOOL signedIn;
         GTLQueryHelloworld *query = [GTLQueryHelloworld
                                      queryForGreetingsGetGreetingWithIdentifier:greetingID];
         [apiService executeQuery:query completionHandler:^(GTLServiceTicket *ticket,
-                                                           GTLHelloworldGreeting *object,
+                                                           GTLHelloworldHelloGreeting *object,
                                                            NSError *error) {
             NSArray *greetings = [NSArray arrayWithObjects: object, nil];
             greetingsRetrievedFromAPI = greetings;
@@ -98,7 +98,7 @@ BOOL signedIn;
     GTLServiceHelloworld *apiService = [self helloworldService];
     GTLQueryHelloworld *query = [GTLQueryHelloworld queryForGreetingsListGreeting];
     [apiService executeQuery:query completionHandler:^(GTLServiceTicket *ticket,
-                                                       GTLHelloworldGreetingCollection *object,
+                                                       GTLHelloworldHelloGreetingCollection *object,
                                                        NSError *error) {
         NSArray *greetings = [object items];
         greetingsRetrievedFromAPI = greetings;
@@ -109,7 +109,7 @@ BOOL signedIn;
 - (IBAction)multiplyGreetings:(id)sender {
     NSLog(@"Multiply greetings");
     GTLServiceHelloworld *apiService = [self helloworldService];
-    GTLHelloworldGreeting *greeting = [GTLHelloworldGreeting new];
+    GTLHelloworldHelloGreeting *greeting = [GTLHelloworldHelloGreeting new];
     greeting.message = [multiplyGreetingMessageField text];
     NSInteger multiplyGreetingCount = [[multiplyGreetingCountField text] intValue];
     
@@ -117,7 +117,7 @@ BOOL signedIn;
                                  queryForGreetingsMultiplyWithObject:greeting
                                                                times:multiplyGreetingCount];
     [apiService executeQuery:query completionHandler:^(GTLServiceTicket *ticket,
-                                                       GTLHelloworldGreeting *object,
+                                                       GTLHelloworldHelloGreeting *object,
                                                        NSError *error) {
         NSArray *greetings = [NSArray arrayWithObjects: object, nil];
         greetingsRetrievedFromAPI = greetings;
@@ -130,7 +130,7 @@ BOOL signedIn;
     GTLServiceHelloworld *apiService = [self helloworldService];
     GTLQueryHelloworld *query = [GTLQueryHelloworld queryForGreetingsAuthed];
     [apiService executeQuery:query completionHandler:^(GTLServiceTicket *ticket,
-                                                       GTLHelloworldGreeting *object,
+                                                       GTLHelloworldHelloGreeting *object,
                                                        NSError *error) {
         NSArray *greetings = [NSArray arrayWithObjects: object, nil];
         greetingsRetrievedFromAPI = greetings;
@@ -181,7 +181,7 @@ BOOL signedIn;
 
 - (void)printGreetings {
     if (greetingsRetrievedFromAPI) {
-        for (GTLHelloworldGreeting *greeting in greetingsRetrievedFromAPI) {
+        for (GTLHelloworldHelloGreeting *greeting in greetingsRetrievedFromAPI) {
             NSLog(@"%@", [greeting message]);
         }
     }
