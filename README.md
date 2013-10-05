@@ -22,7 +22,7 @@ library project ARC notes][8].
 
 ## Setup Instructions
 1. Clone this git repo locally.
-`git clone git@github.com:GoogleCloudPlatform/appengine-endpoints-helloendpoints-ios.git`
+`git clone https//github.com/GoogleCloudPlatform/appengine-endpoints-helloendpoints-ios.git`
 1. [Clone a Hello Endpoints Backend sample locally and BUILD it][7]. These
 instructions will assume the project was downloaded to
 `~/appengine-endpoints-helloendpoints-java-maven` and `mvn clean install` was
@@ -31,7 +31,7 @@ used to build.
 `cd appengine-endpints-helloendpoints-ios/Hello\ Endpoints/`
 `svn checkout http://google-api-objectivec-client.googlecode.com/svn/trunk/ google-api-objectivec-client-read-only`
 1. Build the ServiceGenerator to generate an Objective-C client library.
-`open google-api-objectviec-client-read-only/Source/Tools/ServiceGenerator/ServiceGenerator.xcodeproj`
+`open google-api-objectivec-client-read-only/Source/Tools/ServiceGenerator/ServiceGenerator.xcodeproj`
 Hit the play button to build the project. 
 1. Generate your custom service files to work with the Google Client Library.
     1. Find the ServiceGenerator binary by opening Project Navigator > Products > ServiceGeneator then copying the location from the inspector on the right side of Xcode. It will typically be something like this:
@@ -46,7 +46,7 @@ Hit the play button to build the project.
 
 2. Modify `kMyClientId` and `kMyClientSecret` in `ViewController.m` to include
    the web client ID and client secret you registered in the [APIs Console][6].
-3. Modify `GTLServiceTictactoe.m` (line 44) to point to the location where you
+3. Modify `GTLServiceHelloworld.m` (line 44) to point to the location where you
    are hosting a Helloworld backend.
 4. Run the application.
 
